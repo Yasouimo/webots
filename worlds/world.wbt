@@ -1,0 +1,54 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/appearances/protos/Grass.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/humans/pedestrian/protos/Pedestrian.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/tables/protos/Table.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/factory/forklift/protos/Forklift.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/factory/containers/protos/CardboardBox.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/factory/pallet/protos/WoodenPallet.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation 0.048134218309064676 0.9781395444849654 -0.20230207251167648 0.47709741581913806
+  position -4.973476927742965 3.1674461701914973 2.656895793057956
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 20 20
+  floorAppearance Grass {
+  }
+}
+Table {
+  translation -7.2 -6.5 0
+  rotation 0 1 0 4.692820414042842e-06
+}
+Pedestrian {
+  translation 1.94 -1.3 1.27
+}
+Solid {
+  translation -2.52 0 0.23
+  children [
+    DEF G0 Group {
+      children [
+        Forklift {
+          translation 0 0.01254980355525507 0.3682246642914935
+        }
+        Pedestrian {
+          translation 0 0 0.87
+        }
+      ]
+    }
+  ]
+}
+CardboardBox {
+}
+WoodenPallet {
+  translation 0 2.54 0
+}
